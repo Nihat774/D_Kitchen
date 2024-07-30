@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contanier">
+        <header>
+            <div class="div-logo">
+                <img class="logo" src="./images/logoName.png" alt="">
+            </div>
+            <nav>
+                <div class="links">
+                    <a href="#">Əsas</a>
+                    <a href="#">Haqqımızda</a>
+                    <a href="#">Əlaqə</a>
+                    <a href="#">Menyu</a>
+                </div>
+                <div class="inputDiv">
+                    <input class="search" type="text" placeholder="search">
+                    <div class="glass"><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+            </nav>
+            <div class="bellAndImage">
+                <div class="circle">
+                    <i class="fa-solid fa-bell notification"></i>
+                </div>
+                <div class="user-icon-div">
+                    <img class="user-icon"
+                        src="./images/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+                        alt="">
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="footer">
+        <div class="contanier">
+            <h1 class="dessert">Dessert</h1>
+            <main>
+                <div class="card card1">
+                    <div class="meal-photoDiv">
+                        <img class="meal-photo" src="./images/photo1.jpeg" alt="">
+                    </div>
+                    <div class="cookName1"> Mercimek</div>
+                    <div id="qiymet" class="money1"></div>
+                    <button id="buy" onclick="addToBox1()" class="buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Add to card</span>
+                    </button>
+                </div>
+                <div class="card card2">
+                    <div class="meal-photoDiv">
+                        <img class="meal-photo" src="./images/photo2.jpeg" alt="">
+                    </div>
+                    <div class="cookName2"> Simit</div>
+                    <div id="qiymet" class="money2"></div>
+                    <button id="buy" onclick="addToBox2()">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Add to card</span>
+                    </button>
+                </div>
+
+                <div class="card card3">
+                    <div class="meal-photoDiv">
+                        <img class="meal-photo" src="./images/photo3.jpg" alt="">
+                    </div>
+                    <div class="cookName3"> Pizza</div>
+                    <div id="qiymet" class="money3"></div>
+                    <button id="buy" onclick="addToBox3()">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Add to card</span>
+                    </button>
+                </div>
+
+                <div class="card card4">
+                    <div class="meal-photoDiv">
+                        <img class="meal-photo" src="./images/photo3.jpg" alt="">
+                    </div>
+                    <div class="cookName4"> Pizza</div>
+                    <div id="qiymet" class="money4"></div>
+                    <button id="buy" onclick="addToBox4()">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Add to card</span>
+                    </button>
+                </div>
+
+                <div class="card card5">
+                    <div class="meal-photoDiv">
+                        <img class="meal-photo" src="./images/photo3.jpg" alt="">
+                    </div>
+                    <div class="cookName5"> Pizza</div>
+                    <div id="qiymet" class="money5"></div>
+                    <button id="buy" onclick="addToBox4()">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Add to card</span>
+                    </button>
+                </div>
+
+                <div class="card card6">
+                    <div class="meal-photoDiv">
+                        <img class="meal-photo" src="./images/photo3.jpg" alt="">
+                    </div>
+                    <div class="cookName6"> Pizza</div>
+                    <div id="qiymet" class="money6"></div>
+                    <button id="buy" onclick="addToBox4()">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Add to card</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+
+        <aside>
+            <p class="myOrder">Sifarişlərim</p>
+            <div class="asideBox">
+                <button class="btn-order" onclick="order()">Təsdiqlə <i class="fa-solid fa-check"></i></button>
+            </div>
+        </aside>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
