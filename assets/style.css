@@ -4,20 +4,26 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     background-color: rgb(218, 136, 150);
-    position:-webkit-sticky;
-    position:sticky;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0px;
     height: 12vh;
     width: 100%;
 
 }
-.dessert{
+
+.dessert {
     padding: 10px;
 }
+
 main {
     width: 75vw;
     display: grid;
@@ -25,7 +31,8 @@ main {
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     place-items: center;
@@ -33,31 +40,37 @@ nav{
 
 
 }
-.links{
+
+.links {
     display: flex;
     justify-content: baseline;
     gap: 2rem;
 }
-a{
+
+a {
     color: black;
     text-decoration: none;
     font-size: 1.3rem;
 }
-a:hover{
+
+a:hover {
     color: white;
 }
-.inputDiv{
+
+.inputDiv {
     display: flex;
     place-items: center;
 }
-.search{
+
+.search {
     width: 20vw;
     padding: 10px;
     border-radius: 15px;
     font-size: 1.1rem;
 
 }
-.glass{
+
+.glass {
     position: relative;
     right: 17%;
     top: 4%;
@@ -67,14 +80,16 @@ a:hover{
     cursor: pointer;
     border-radius: 15px;
 }
+
 .footer {
     display: flex;
 }
 
 aside {
-    background-color: red;
     width: 25vw;
     height: 100vh;
+    paddingY: 10px;
+    overflow: auto;
 }
 
 .logo {
@@ -85,8 +100,8 @@ aside {
 }
 
 .div-logo {
-     /* height: 15vh; */
-    width: 12vw; 
+    /* height: 15vh; */
+    width: 12vw;
 }
 
 .notification {
@@ -138,9 +153,9 @@ aside {
     border-color: red;
 }
 
-#buy:hover {
+/* #buy:hover {
     padding: 12px;
-}
+} */
 
 .card {
     width: fit-content;
@@ -162,12 +177,15 @@ aside {
     height: 65%;
     display: flex;
     justify-content: center;
-    margin-top: 10px;    transition-duration: 1s;
+    margin-top: 10px;
+    transition-duration: 1s;
 }
-.meal-photoDiv:hover{
+
+.meal-photoDiv:hover {
     transform: scale(1.03);
 
 }
+
 .cookName1,
 .cookName2,
 .cookName3,
@@ -196,7 +214,8 @@ aside {
     background-color: white;
     height: fit-content;
 }
-.myOrder{
+
+.myOrder {
     background-color: white;
     height: 10vh;
     color: black;
@@ -206,13 +225,58 @@ aside {
     place-items: center;
 
 }
-.btn-order{
+
+.btn-order {
     width: 100%;
     padding: 10px;
     font-size: 1.3rem;
 }
+
 /* !JS */
-.newPhoto{
+/* .newPhoto{
     width: 30px;
     height: 30px;
+} */
+.sifarish {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.sPhoto {
+    display: flex;
+    justify-content: center;
+    marfin-top: 10px;
+    object-fit: cover;
+}
+
+.sImg {
+    width: 15vw;
+    height: 20vh;
+}
+
+.sName {
+    font-weight: bold;
+    width: 15vw;
+
+}
+
+.sPrice {
+    width: 15vw;
+
+}
+
+.name-price {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+
+}
+.word{
+    border: 1px solid;
+    text-align: center;
+    font-size: 1.3rem;
 }

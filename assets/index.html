@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
@@ -25,7 +26,7 @@
                     <a href="#">Menyu</a>
                 </div>
                 <div class="inputDiv">
-                    <input class="search" type="text" placeholder="search">
+                    <input class="search" type="text" placeholder="search" maxlength="15">
                     <div class="glass"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </div>
             </nav>
@@ -52,7 +53,7 @@
                     </div>
                     <div class="cookName1"> Mercimek</div>
                     <div id="qiymet" class="money1"></div>
-                    <button id="buy" onclick="addToBox1()" class="buy">
+                    <button id="buy" onclick="addToBox()" class="buy1">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span>Add to card</span>
                     </button>
@@ -63,7 +64,7 @@
                     </div>
                     <div class="cookName2"> Simit</div>
                     <div id="qiymet" class="money2"></div>
-                    <button id="buy" onclick="addToBox2()">
+                    <button id="buy" onclick="addToBox()">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span>Add to card</span>
                     </button>
@@ -75,7 +76,7 @@
                     </div>
                     <div class="cookName3"> Pizza</div>
                     <div id="qiymet" class="money3"></div>
-                    <button id="buy" onclick="addToBox3()">
+                    <button id="buy" onclick="addToBox()">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span>Add to card</span>
                     </button>
@@ -87,7 +88,7 @@
                     </div>
                     <div class="cookName4"> Pizza</div>
                     <div id="qiymet" class="money4"></div>
-                    <button id="buy" onclick="addToBox4()">
+                    <button id="buy" onclick="addToBox()">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span>Add to card</span>
                     </button>
@@ -99,7 +100,7 @@
                     </div>
                     <div class="cookName5"> Pizza</div>
                     <div id="qiymet" class="money5"></div>
-                    <button id="buy" onclick="addToBox4()">
+                    <button id="buy" onclick="addToBox()">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span>Add to card</span>
                     </button>
@@ -111,7 +112,7 @@
                     </div>
                     <div class="cookName6"> Pizza</div>
                     <div id="qiymet" class="money6"></div>
-                    <button id="buy" onclick="addToBox4()">
+                    <button id="buy" onclick="addToBox()">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span>Add to card</span>
                     </button>
@@ -122,11 +123,16 @@
         <aside>
             <p class="myOrder">Sifarişlərim</p>
             <div class="asideBox">
-                <button class="btn-order" onclick="order()">Təsdiqlə <i class="fa-solid fa-check"></i></button>
+                 <p class="word">Siyahı boşdur...</p>
+                <div class="bosh">
+                   
+                </div>
+                <button class="btn-order">Təsdiqlə <i class="fa-solid fa-check"></i></button>
             </div>
         </aside>
     </div>
     <script src="./app.js"></script>
+
 </body>
 
 </html>

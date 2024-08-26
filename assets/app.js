@@ -13,6 +13,9 @@ const btn = document.getElementById("buy")
 const card = document.querySelector(".card")
 const aside = document.querySelector("aside")
 
+// console.log(aside);
+
+
 // let mealName1 = dessert.mealName1
 // let mealName2 = "Simit"
 // let mealName3 = "Pizza"
@@ -34,23 +37,34 @@ const aside = document.querySelector("aside")
 // price6.innerHTML = "$15"
 
 
-const dessert =[ 
-    {mealName1:"Mərcimək",price1:"$5",photo1:"./images/photo1.jpeg"},
-    {mealName2:"Pizza",price2:"$5",photo2:"./images/photo2.jpeg"},
-    {mealName3:"Simit",price3:"$5",photo3:"./images/photo3.jpg"},
-    {mealName4:"Sup",price4:"$5",photo4:"./images/photo2.jpeg"}
-] 
-
-function addToBox1() {
-    dessert.filter(({mealName1,price1,photo1})=>{
-        aside.innerHTML += `
-        <div>${mealName1}</div>
-        <div>${price1}</div>
-        <div>${photo1}</div>
-
+const dessert = [
+    { id: 1, mealName1: "Mərcimək", price1: "$5", photo1: "./images/photo1.jpeg" },
+    { id: 2, mealName1: "Pizza", price1: "$5", photo1: "./images/photo2.jpeg" },
+    { id: 3, mealName1: "Simit", price1: "$5", photo1: "./images/photo3.jpg" },
+    { id: 4, mealName1: "Sup", price1: "$5", photo1: "./images/photo2.jpeg" }
+]
+const box = document.querySelector(".bosh")
+const word = document.querySelector(".word")
+function addToBox(event) {
+    dessert.map(({ id, mealName1, price1, photo1 }) => {
+        if (id == 1) {
+            word.innerHTML = ""
+            box.innerHTML += `
+            <div class="sifarish">
+                 <div class="sPhoto">
+                   <img class="sImg" src=${photo1}>
+                 </div>
+              <div class="name-price">
+                <div class="sName">${mealName1}</div>
+                <div class="sPrice">${price1}</div>
+              </div>
+            </div>
         `
+        console.log(event.currentTarget.className);
+        }
     }
-)}
+    )
+}
 // function addToBox2() {
 //     asideBox.innerHTML += `
 //     <div class="newBox">
@@ -107,7 +121,7 @@ function addToBox1() {
 //                 <div class="newName"><h2>${mealName1}</h2></div>
 //                 <div><h4>${price1}</h4></div>
 //              </div>
-    
+
 //             <div class="trashDiv" onclick="removeOrder()">
 //                 <i class="fa-solid fa-trash"></i>
 //             </div>
@@ -118,4 +132,18 @@ function addToBox1() {
 //     asideBox.remove()
 
 // }
-
+const btnOrder = document.querySelector(".btn-order")
+function order() {
+    Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Sifarişiniz təsdiqləndi.",
+        showConfirmButton: false,
+        timer: 1500
+    });
+    box.innerHTML = ""
+    word.innerHTML = "Siyahı boşdur..."
+  
+    
+}
+btnOrder.addEventListener("click",order) 
